@@ -8,18 +8,18 @@ import org.apache.shiro.realm.Realm;
 public class MyRealm implements Realm{
 
 	public String getName() {
-		// TODO Auto-generated method stub
+		System.out.println("getName()");
 		return null;
 	}
 
 	public boolean supports(AuthenticationToken token) {
-		// TODO Auto-generated method stub
+		System.out.println("supports");
 		return false;
 	}
 
 	public AuthenticationInfo getAuthenticationInfo(AuthenticationToken token)
 			throws AuthenticationException {
-		// TODO Auto-generated method stub
+		System.out.println("getAuthenticationInfo");
 		return null;
 	}
 
